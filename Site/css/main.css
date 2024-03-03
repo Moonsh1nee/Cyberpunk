@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@font-face {
+    font-family: "Archangelsk";
+    src: url("https://fontsforyou.com/fonts/a/Archangelsk.ttf");
+}
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    /*font-family: "Archangelsk";*/
+}
+
+h2 {
+    font-family: "Archangelsk", sans-serif;
+    font-size: 62px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* SWIPER */
+
+.swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1000px;
+    z-index: 1;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 1920px;
+    height: 1000px;
+    object-fit: cover;
+
+}
+
+/* END-SWIPER */
+
+/* HEADER */
+
+.header {
+    position: relative;
+    min-height: 1000px;
+}
+
+.slide__inner {
+    position: absolute;
+    top: 20px;
+    right: auto;
+    z-index: 2;
+}
+
+.header__logo {
+    padding-left: 6px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 605px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 0 40px;
+}
+
+.menu_social {
+    min-height: 30px;
+    min-width: 30px;
+}
+
+.top__inner {
+    position: absolute;
+    max-width: 624px;
+    min-height: 369px;
+    bottom: -906px;
+    right: 0;
+    padding: 70px;
+    background-color: #F8F200;
+    clip-path: polygon(8% 0, 70% 0%, 100% 0, 100% 87%, 92% 100%, 0 100%, 0% 70%, 0 14%);
+}
+
+.top_title {
+    margin-bottom: 25px;
+}
+
+.top_btn {
+    color: #F8F200;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 19px 50px;
+    background-color: #000;
+    line-height: 1.6;
+}
